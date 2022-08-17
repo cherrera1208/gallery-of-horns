@@ -1,0 +1,12 @@
+.beasts {
+  border: 1px solid black;
+  box-shadow: 8px 8px 10px black;
+  width: min-content;
+  text-align: center;
+  padding: 1rem;
+  border-radius: 1rem;
+}
+
+.beasts:hover {
+  cursor: pointer;
+}
