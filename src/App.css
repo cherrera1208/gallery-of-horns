@@ -6,6 +6,8 @@ body {
 
 Main {
   display: flex;
+  /* grid-template-columns: repeat(4, 5fr);
+  grid-template-rows: repeat(4, 5fr); */
   justify-content: space-around;
   align-items: center;
   flex-wrap: wrap;

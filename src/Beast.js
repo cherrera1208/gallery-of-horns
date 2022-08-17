@@ -1,8 +1,6 @@
 import React from 'react';
 import Card from 'react-bootstrap/Card';
-import CardGroup from 'react-bootstrap/CardGroup';
 import './Beast.css';
-
 class Beast extends React.Component {
   constructor(props) {
     super(props)
