@@ -11,9 +11,6 @@ class App extends React.Component {
         <Header />
         <Main />
         <Footer />
-        {/* <header>header</header> */}
-        {/* <main>main</main> */}
-        {/* <footer>foot</footer> */}
       </>
     )
   }
