@@ -14,11 +14,19 @@ class SelectedBeasts extends React.Component {
   };
 
   render() {
-    console.log(this.props.beast)
     return (
-      <Modal show={this.props.showModal} onHide={this.props.handleHideModal}>
+      <Modal className="beasts"
+        show={this.props.showModal} onHide={this.props.handleHideModal}>
         <Modal.Header closeButton>
           <Modal.Title>{this.props.beast.title}</Modal.Title>
+          <Modal.Body>
+            < img
+              src={this.props.beast.img}
+              alt={this.props.keyword}
+              title={this.props.title}
+            />
+            {this.props.beast.description}
+          </Modal.Body>
         </Modal.Header>
       </Modal>
     )
