@@ -1,24 +1,24 @@
 import React from 'react';
-import Beast from './Beasts.js';
-
+import Beast from './Beast.js';
+import data from './data.json';
 class Main extends React.Component {
   render() {
-    // console.log(this.props.handleClick);
-    let beastsArr = this.props.data.map((beastCall, idx) => {
-      return <Beast
-        img={beastCall.image_url}
-        title={beastCall.title}
-        description={beastCall.description}
-        alt={beastCall.keyword}
-        key={idx}
-        handleHearts={this.props.handleHearts}
-        handleClick={this.props.handleClick}
-      />
+    let beastsArr = [];
+    data.forEach((beastCall, idx) => {
+      beastsArr.push(
+        <Beast
+          img={beastCall.image_url}
+          title={beastCall.title}
+          description={beastCall.description}
+          alt={beastCall.keyword}
+          key={idx}
+        />
+      )
     });
     return (
       <main>
         {beastsArr}
-      </main >
+      </main>
     );
   };
 }
