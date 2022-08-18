@@ -38,7 +38,7 @@ class Beasts extends React.Component {
           />
           <p>{this.props.description}</p>
         </Card>
-      </div >
+      </div>
     )
   };
 }
