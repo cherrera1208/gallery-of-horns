@@ -1,7 +1,8 @@
 import React from 'react';
 import Card from 'react-bootstrap/Card';
-import './Beast.css';
-class Beast extends React.Component {
+import './Beasts.css';
+
+class Beasts extends React.Component {
   constructor(props) {
     super(props)
     this.state = {
@@ -15,12 +16,21 @@ class Beast extends React.Component {
     })
   }
 
+  handleClick = () => {
+    // console.log(this.props.handleClick);
+    this.props.handleClick(this.props);
+  }
+
   render() {
     return (
       <div className='beasts'>
-        <Card onClick={this.handleLikes}>
+        <Card onClick={() => {
+          this.handleLikes();
+          this.handleClick();
+          this.props.handleHearts();
+        }}>
           <h2>{this.props.title}</h2>
-          <p>❤️ {this.state.likes}</p>
+          <p>👍 {this.state.likes}</p>
           <img
             src={this.props.img}
             alt={this.props.keyword}
@@ -28,9 +38,9 @@ class Beast extends React.Component {
           />
           <p>{this.props.description}</p>
         </Card>
-      </div>
+      </div >
     )
   };
 }
 
-export default Beast;
+export default Beasts;
