@@ -26,7 +26,7 @@ class App extends React.Component {
   handleClick = (beast) => {
     // console.log(beast)
     this.setState({
-      selectedBeast: beast,
+      selectedBeasts: beast,
       showModal: true
     });
   };
@@ -57,7 +57,7 @@ class App extends React.Component {
         // handleShowModal={this.handleShowModal}
         />
         <SelectedBeasts
-          beast={this.state.selectedBeast}
+          beast={this.state.selectedBeasts}
           showModal={this.state.showModal}
           handleHideModal={this.handleHideModal}
         />
