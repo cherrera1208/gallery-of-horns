@@ -19,3 +19,12 @@ footer {
 img {
   width: 10rem;
 }
+
+.form-select {
+  width: fit-content;
+}
+
+.btn {
+  margin-top: .25rem;
+  margin-bottom: .5rem;
+}
