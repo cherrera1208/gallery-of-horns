@@ -17,7 +17,6 @@ class Beasts extends React.Component {
   }
 
   handleClick = () => {
-    // console.log(this.props.handleClick);
     this.props.handleClick(this.props);
   }
 

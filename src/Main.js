@@ -3,7 +3,6 @@ import Beast from './Beasts.js';
 
 class Main extends React.Component {
   render() {
-    // console.log(this.props.handleClick);
     let beastsArr = this.props.data.map((beastCall, idx) => {
       return <Beast
         img={beastCall.image_url}
