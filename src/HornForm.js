@@ -13,12 +13,13 @@ class HornForm extends React.Component {
     return (
       <>
         <Form.Group>
-          <Form.Label>Horns to Choose</Form.Label>
+          <Form.Label>Choose Your Horns</Form.Label>
           <Form.Select name='hornsForm' onChange={this.handleSubmit}>
-            <option value='1'>1</option>
-            <option value='2'>2</option>
-            <option value='3'>3</option>
+            <option value='0'>1</option>
+            <option value='1'>2</option>
+            <option value='2'>3</option>
             <option value='100'>100</option>
+            <option value='4'>all beasts</option>
           </Form.Select>
         </Form.Group >
       </>

@@ -6,6 +6,7 @@ import HornForm from './HornForm.js';
 import SelectedBeasts from './SelectedBeasts';
 import './App.css';
 import data from './data.json';
+
 class App extends React.Component {
   constructor(props) {
     super(props);
@@ -13,6 +14,7 @@ class App extends React.Component {
       selectedBeasts: {},
       hearts: '',
       showModal: false,
+      selected: "",
       filteredData: data,
     };
   }
@@ -37,21 +39,25 @@ class App extends React.Component {
   };
 
   handleSubmit = (selected) => {
-    console.log(data);
-    if (selected === '1') {
+    if (selected === '0') {
       let newArr = data.filter((beast) => beast.horns === 1);
       this.setState({
         filteredData: newArr,
       });
-    } else if (selected === '2') {
+    } else if (selected === '1') {
       let newArr = data.filter((beast) => beast.horns === 2);
       this.setState({
         filteredData: newArr,
       });
-    } else if (selected === '3') {
+    } else if (selected === '2') {
       let newArr = data.filter((beast) => beast.horns === 3);
       this.setState({
         filteredData: newArr,
+      });
+    } else if (selected === '3') {
+      let newArr = data.filter((beast) => beast.horns === 100);
+      this.setState({
+        filteredBeast: newArr,
       });
     } else {
       this.setState({
