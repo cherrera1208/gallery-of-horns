@@ -28,16 +28,18 @@ class Beasts extends React.Component {
           this.handleClick();
           this.props.handleHearts();
         }}>
-          <h2>{this.props.title}</h2>
-          <p>👍 {this.state.likes}</p>
-          <img
-            src={this.props.img}
-            alt={this.props.keyword}
-            title={this.props.title}
-          />
-          <p>{this.props.description}</p>
-        </Card>
-      </div>
+          <div className='beastContent'>
+            <h2>{this.props.title}</h2>
+            <p>👍 {this.state.likes}</p>
+            <img
+              src={this.props.img}
+              alt={this.props.keyword}
+              title={this.props.title}
+            />
+            <p>{this.props.description}</p>
+          </div>
+        </Card >
+      </div >
     )
   };
 }

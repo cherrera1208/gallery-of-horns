@@ -1,12 +1,41 @@
 .beasts {
   border: 1px solid black;
   box-shadow: 8px 8px 10px black;
-  width: min-content;
   text-align: left;
   padding: 1rem;
   border-radius: 1rem;
+  margin: .5rem;
+
+}
+
+.beastContent {
+  height: 58vh;
+  width: min-content;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  overflow: scroll;
+  text-align: justify;
+}
+
+.btn-close {
+  background-color: red;
+  align-self: baseline;
 }
 
 .beasts:hover {
   cursor: pointer;
+}
+
+.beastsBody {
+  display: flex;
+  justify-content: space-around;
+  flex-direction: column;
+  align-items: center;
+}
+
+.beastsModal img {
+  border: 1px solid beige;
+  margin: 1rem;
 }
